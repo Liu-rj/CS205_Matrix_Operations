@@ -1,0 +1,18 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/cygdrive/d/SUSTech_cpp/assignments/Assignment4_matrix_operation/main.cpp
+iostream
+-
+matrix.h
+/cygdrive/d/SUSTech_cpp/assignments/Assignment4_matrix_operation/matrix.h
+
+/cygdrive/d/SUSTech_cpp/assignments/Assignment4_matrix_operation/matrix.h
+iostream
+-
+

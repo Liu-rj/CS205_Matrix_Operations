@@ -1,0 +1,4 @@
+C:\Users\21548\AppData\Local\JetBrains\CLion2020.2\cygwin_cmake\bin\cmake.exe -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" /cygdrive/d/SUSTech_cpp/assignments/Assignment4_matrix_operation
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /cygdrive/d/SUSTech_cpp/assignments/Assignment4_matrix_operation/cmake-build-debug
