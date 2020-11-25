@@ -3,8 +3,8 @@
 //
 
 #include "mxm.h"
-#include <xmmintrin.h>
-#include <immintrin.h>
+//#include <xmmintrin.h>
+//#include <immintrin.h>
 #include <omp.h>
 
 void mxm(float **c, float **a, float **b, int row1, int column1, int row2, int column2) {
@@ -33,21 +33,6 @@ void mxm_block(float **c, float **a, float **b, int row1, int column1, int row2,
     }
 }
 
-void mxm_sse(float **c, float **a, float **b, int row1, int column1, int row2, int column2) {
-    __m128 ma, mb, mc;
-    mc = _mm_setzero_ps();
-    for (int i = 0; i < row1; ++i) {
-        for (int j = 0; j < column1; j ++) {
-            for (int k = 0; k < column2; k += 4) {
-                ma = _mm_load_ps(a[i]);
-                mb = _mm_load_ps(b[j] + k);
-                mc = _mm_add_ps(mc, _mm_mul_ps(ma, mb));
-                _mm_store_ps(c[i] + k, mc);
-            }
-        }
-    }
-}
-
 void addDot(float **c, float **a, float **b, int column1, int i, int j) {
     register float creg1, creg2, creg3, creg4, creg5, creg6, creg7, creg8, creg9, creg10, creg11, creg12, creg13, creg14, creg15, creg16;
     register float areg1, areg2, areg3, areg4;
@@ -56,7 +41,7 @@ void addDot(float **c, float **a, float **b, int column1, int i, int j) {
     creg3 = 0;
     creg4 = 0;
 
-    __m128 ma, mb, mc0, mc1, mc2, mc3;
+    //__m128 ma, mb, mc0, mc1, mc2, mc3;
 
     for (int k = 0; k < column1; k++) {
         areg1 = a[i][k];

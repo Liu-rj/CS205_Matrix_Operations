@@ -1,0 +1,3 @@
+/home/pi/test/Matrix_Operations/CMakeFiles/rebuild_cache.dir
+/home/pi/test/Matrix_Operations/CMakeFiles/Assignment4_matrix_operation.dir
+/home/pi/test/Matrix_Operations/CMakeFiles/edit_cache.dir
