@@ -26,7 +26,7 @@ Matrix::Matrix(int row, int column, float **p)
     size = row * column;
     data = new Data;
     data->elements = p;
-    data->count = 1;
+    data->count = 2;
 }
 
 Matrix::Matrix(Matrix const &matrix)

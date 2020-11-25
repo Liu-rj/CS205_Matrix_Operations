@@ -22,16 +22,6 @@ mxm.h
 iostream
 -
 
-/cygdrive/d/SUSTech_cpp/assignments/Assignment4_matrix_operation/mxm.cpp
-mxm.h
-/cygdrive/d/SUSTech_cpp/assignments/Assignment4_matrix_operation/mxm.h
-xmmintrin.h
--
-immintrin.h
--
-omp.h
--
-
 /cygdrive/d/SUSTech_cpp/assignments/Assignment4_matrix_operation/mxm.h
 iostream
 -
