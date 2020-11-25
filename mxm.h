@@ -7,24 +7,7 @@
 
 #include <iostream>
 
-struct matrix {
-    int row;
-    int column;
-    float **elements;
-
-    matrix(int a, int b) {
-        row = a;
-        column = b;
-        elements = new float*[row];
-        for (int i = 0; i < row; ++i) {
-            elements[i] = new float[column]{};
-        }
-    }
-};
-
-void mxm_column(float **c, float **a, float **b,int row1, int column1, int row2, int column2);
-
-void mxm_row(float **c, float **a, float **b,int row1, int column1, int row2, int column2);
+void mxm(float **c, float **a, float **b,int row1, int column1, int row2, int column2);
 
 void mxm_block(float **c, float **a, float **b,int row1, int column1, int row2, int column2);
 

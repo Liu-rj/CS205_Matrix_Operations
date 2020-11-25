@@ -5,24 +5,16 @@ using namespace std;
 
 int main()
 {
-    Matrix a(3, 5);
-    for (int i = 0; i < 3; ++i)
-    {
-        for (int j = 0; j < 5; ++j)
-        {
-            a.getElements()[i][j] = (i + j) / 2;
-        }
-    }
-    Matrix b(5, 3);
-    for (int i = 0; i < 5; ++i)
-    {
-        for (int j = 0; j < 3; ++j)
-        {
-            b.getElements()[i][j] = (i + j) / 2;
-        }
-    }
-    Matrix c;
-    c = a * b;
-    cout << c << a << b;
+    float a[15]={1.0f, 1.0f, 1.0f, 1.0f, 1.0f, 2.0f, 2.0f, 2.0f, 2.0f, 2.0f, 3.0f, 3.0f, 3.0f, 3.0f, 3.0f};
+    float b[15]={1.0f, 1.0f, 1.0f, 2.0f, 2.0f, 2.0f, 3.0f, 3.0f, 3.0f, 4.0f, 4.0f, 4.0f, 5.0f, 5.0f, 5.0f};
+    float c = 2, d = 3;
+    Matrix A(3, 5, a);
+    Matrix B(5, 3 ,b);
+    Matrix D, E;
+    Matrix C = A * B;
+    Matrix F(A);
+    D = A * c;
+    E = d * B;
+    cout << A << B << C << D << E << F;
     return 0;
 }

@@ -9,20 +9,52 @@ Matrix::Matrix(int row, int column)
 {
     this->row = row;
     this->column = column;
-    elements = new float *[row + 1];
+    size = row * column;
+    data = new Data;
+    data->elements = new float*[row];
     for (int i = 0; i < row; ++i)
     {
-        elements[i] = new float[column]{};
+        data->elements[i] = new float[column];
     }
-    elements[row] = new float{0};
+    data->count = 1;
 }
 
-Matrix::Matrix(Matrix &matrix)
+Matrix::Matrix(int row, int column, float **p)
+{
+    this->row = row;
+    this->column = column;
+    size = row * column;
+    data = new Data;
+    data->elements = p;
+    data->count = 1;
+}
+
+Matrix::Matrix(Matrix const &matrix)
 {
     row = matrix.row;
     column = matrix.column;
-    elements = matrix.elements;
-    elements[row][0]++;
+    size = row * column;
+    data = matrix.data;
+    data->count++;
+}
+
+Matrix::Matrix(int row, int column, const float *p)
+{
+    this->row = row;
+    this->column = column;
+    size = row * column;
+    data = new Data;
+    data->elements = new float*[row];
+    int pos = 0;
+    for (int i = 0; i < row; ++i)
+    {
+        data->elements[i] = new float[column];
+        for (int j = 0; j < column; ++j)
+        {
+            data->elements[i][j] = p[pos++];
+        }
+    }
+    data->count = 1;
 }
 
 int Matrix::getRow() const
@@ -30,9 +62,9 @@ int Matrix::getRow() const
     return row;
 }
 
-void Matrix::setRow(int row)
+void Matrix::setRow(int i)
 {
-    Matrix::row = row;
+    Matrix::row = i;
 }
 
 int Matrix::getColumn() const
@@ -40,31 +72,32 @@ int Matrix::getColumn() const
     return column;
 }
 
-void Matrix::setColumn(int column)
+void Matrix::setColumn(int i)
 {
-    Matrix::column = column;
+    Matrix::column = i;
 }
 
 float **Matrix::getElements() const
 {
-    return elements;
+    return data->elements;
 }
 
 Matrix::~Matrix()
 {
     cout << "matrix with size (" << row << "," << column << ") is being destroyed." << endl;
-    if (elements[row][0] == 0)
+    if (data->count == 1)
     {
         for (int i = 0; i < row; ++i)
         {
-            delete elements[i];
+            delete[] data->elements[i];
         }
-        delete[] elements;
-        cout << "elements are being destroyed" << endl;
+        delete[] data->elements;
+        delete data;
+        cout << "data is being destroyed" << endl;
     }
     else
     {
-        elements[row][0]--;
+        data->count--;
     }
 }
 
@@ -73,21 +106,24 @@ Matrix &Matrix::operator=(const Matrix &matrix)
     if (&matrix == this)
         return *this;
 
-    if (elements != nullptr && elements[row][0] == 0)
+    if (data != nullptr && data->count == 0)
     {
         for (int i = 0; i < row; ++i)
         {
-            delete[] elements[i];
+            delete[] data->elements[i];
         }
-        delete[] elements;
+        delete[] data->elements;
+        delete data;
     }
     else
-        elements[row][0]--;
+        data->count--;
 
     row = matrix.row;
     column = matrix.column;
-    elements = matrix.elements;
-    elements[row][0]++;
+    size = row * column;
+    data = matrix.data;
+    data->count++;
+
     return *this;
 }
 
@@ -98,7 +134,7 @@ ostream &operator<<(ostream &os, const Matrix &matrix)
     {
         for (int j = 0; j < matrix.column; ++j)
         {
-            cout << matrix.elements[i][j];
+            cout << matrix.data->elements[i][j];
             if (j != matrix.column - 1)
                 cout << ',';
         }
@@ -114,12 +150,38 @@ ostream &operator<<(ostream &os, const Matrix &matrix)
 Matrix Matrix::operator*(Matrix &matrix)
 {
     Matrix result;
-    if (this->column != matrix.row)
+    if (column != matrix.row)
     {
         cout << "matrix size mismatch!" << endl;
         return result;
     }
-    result = Matrix(this->row, matrix.column);
-    mxm_row(result.elements, this->elements, matrix.elements, this->row, this->column, matrix.row, matrix.column);
+    result = Matrix(row, matrix.column);
+    mxm(result.data->elements, data->elements, matrix.data->elements, row, column, matrix.row, matrix.column);
+    return result;
+}
+
+Matrix Matrix::operator*(float t) const
+{
+    Matrix result(this->row, this->column);
+    for (int i = 0; i < row; ++i)
+    {
+        for (int j = 0; j < column; ++j)
+        {
+            result.data->elements[i][j] = this->data->elements[i][j] * t;
+        }
+    }
+    return result;
+}
+
+Matrix operator*(float t, Matrix &matrix)
+{
+    Matrix result(matrix.row, matrix.column);
+    for (int i = 0; i < matrix.row; ++i)
+    {
+        for (int j = 0; j < matrix.column; ++j)
+        {
+            result.data->elements[i][j] = matrix.data->elements[i][j] * t;
+        }
+    }
     return result;
 }

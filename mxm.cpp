@@ -7,7 +7,7 @@
 #include <immintrin.h>
 #include <omp.h>
 
-void mxm_row(float **c, float **a, float **b, int row1, int column1, int row2, int column2) {
+void mxm(float **c, float **a, float **b, int row1, int column1, int row2, int column2) {
     for (int i = 0; i < row1; ++i) {
         for (int j = 0; j < column1; ++j) {
             for (int k = 0; k < column2; ++k) {
@@ -17,21 +17,13 @@ void mxm_row(float **c, float **a, float **b, int row1, int column1, int row2, i
     }
 }
 
-void mxm_column(float **c, float **a, float **b, int row1, int column1, int row2, int column2) {
-    for (int i = 0; i < row1; ++i) {
-        for (int j = 0; j < column2; ++j) {
-            for (int k = 0; k < column1; ++k) {
-                c[i][j] += a[i][k] * b[k][j];
-            }
-        }
-    }
-}
-
 void mxm_block(float **c, float **a, float **b, int row1, int column1, int row2, int column2) {
-    for (int i = 0; i < row1; i ++) {
-        for (int j = 0; j < column1; j += 4) {
+    int i, j ,k;
+#pragma omp parallel for private(i, j, k)
+    for (i = 0; i < row1; i ++) {
+        for (j = 0; j < column1; j += 4) {
             register float reg1 = a[i][j], reg2 = a[i][j + 1], reg3 = a[i][j + 2], reg4 = a[i][j + 3];
-            for (int k = 0; k < column2; k += 4) {
+            for (k = 0; k < column2; k += 4) {
                 c[i][k] += reg1 * b[j][k] + reg2 * b[j + 1][k] + reg3 * b[j + 2][k] + reg4 * b[j + 3][k];
                 c[i][k + 1] += reg1 * b[j][k + 1] + reg2 * b[j + 1][k + 1] + reg3 * b[j + 2][k + 1] + reg4 * b[j + 3][k + 1];
                 c[i][k + 2] += reg1 * b[j][k + 2] + reg2 * b[j + 1][k + 2] + reg3 * b[j + 2][k + 2] + reg4 * b[j + 3][k + 2];

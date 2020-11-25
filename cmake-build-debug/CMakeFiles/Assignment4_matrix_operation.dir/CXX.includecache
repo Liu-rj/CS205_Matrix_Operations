@@ -12,7 +12,27 @@ iostream
 matrix.h
 /cygdrive/d/SUSTech_cpp/assignments/Assignment4_matrix_operation/matrix.h
 
+/cygdrive/d/SUSTech_cpp/assignments/Assignment4_matrix_operation/matrix.cpp
+matrix.h
 /cygdrive/d/SUSTech_cpp/assignments/Assignment4_matrix_operation/matrix.h
+mxm.h
+/cygdrive/d/SUSTech_cpp/assignments/Assignment4_matrix_operation/mxm.h
+
+/cygdrive/d/SUSTech_cpp/assignments/Assignment4_matrix_operation/matrix.h
+iostream
+-
+
+/cygdrive/d/SUSTech_cpp/assignments/Assignment4_matrix_operation/mxm.cpp
+mxm.h
+/cygdrive/d/SUSTech_cpp/assignments/Assignment4_matrix_operation/mxm.h
+xmmintrin.h
+-
+immintrin.h
+-
+omp.h
+-
+
+/cygdrive/d/SUSTech_cpp/assignments/Assignment4_matrix_operation/mxm.h
 iostream
 -
 
