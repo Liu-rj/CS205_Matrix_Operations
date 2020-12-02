@@ -1,4 +1,4 @@
-C:\Users\21548\AppData\Local\JetBrains\CLion2020.2\cygwin_cmake\bin\cmake.exe -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" /cygdrive/d/2020_Fall_courses/SUSTech_cpp/assignments/Assignment4_matrix_operation
--- Configuring done
--- Generating done
--- Build files have been written to: /cygdrive/d/2020_Fall_courses/SUSTech_cpp/assignments/Assignment4_matrix_operation/cmake-build-debug
+Cannot generate into D:\2020_Fall_courses\SUSTech_cpp\assignments\Assignment4_matrix_operation
+It is already used for project C:\cygwin64\home\pi\test\Matrix_Operations
+
+Please either delete it manually or select another generation directory
