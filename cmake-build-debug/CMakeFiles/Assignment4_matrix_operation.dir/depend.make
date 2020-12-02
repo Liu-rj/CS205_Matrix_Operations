@@ -6,8 +6,7 @@ CMakeFiles/Assignment4_matrix_operation.dir/main.cpp.o: ../matrix.h
 
 CMakeFiles/Assignment4_matrix_operation.dir/matrix.cpp.o: ../matrix.cpp
 CMakeFiles/Assignment4_matrix_operation.dir/matrix.cpp.o: ../matrix.h
-CMakeFiles/Assignment4_matrix_operation.dir/matrix.cpp.o: ../mxm.h
 
-CMakeFiles/Assignment4_matrix_operation.dir/mxm.cpp.o: ../mxm.cpp
-CMakeFiles/Assignment4_matrix_operation.dir/mxm.cpp.o: ../mxm.h
+CMakeFiles/Assignment4_matrix_operation.dir/moperation.cpp.o: ../matrix.h
+CMakeFiles/Assignment4_matrix_operation.dir/moperation.cpp.o: ../moperation.cpp
 

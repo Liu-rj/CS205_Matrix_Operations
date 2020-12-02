@@ -63,10 +63,10 @@ RM = /cygdrive/c/Users/21548/AppData/Local/JetBrains/CLion2020.2/cygwin_cmake/bi
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /cygdrive/d/SUSTech_cpp/assignments/Assignment4_matrix_operation
+CMAKE_SOURCE_DIR = /cygdrive/d/2020_Fall_courses/SUSTech_cpp/assignments/Assignment4_matrix_operation
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /cygdrive/d/SUSTech_cpp/assignments/Assignment4_matrix_operation/cmake-build-debug
+CMAKE_BINARY_DIR = /cygdrive/d/2020_Fall_courses/SUSTech_cpp/assignments/Assignment4_matrix_operation/cmake-build-debug
 
 # Include any dependencies generated for this target.
 include CMakeFiles/Assignment4_matrix_operation.dir/depend.make
@@ -79,58 +79,58 @@ include CMakeFiles/Assignment4_matrix_operation.dir/flags.make
 
 CMakeFiles/Assignment4_matrix_operation.dir/main.cpp.o: CMakeFiles/Assignment4_matrix_operation.dir/flags.make
 CMakeFiles/Assignment4_matrix_operation.dir/main.cpp.o: ../main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cygdrive/d/SUSTech_cpp/assignments/Assignment4_matrix_operation/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/Assignment4_matrix_operation.dir/main.cpp.o"
-	/usr/bin/c++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Assignment4_matrix_operation.dir/main.cpp.o -c /cygdrive/d/SUSTech_cpp/assignments/Assignment4_matrix_operation/main.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cygdrive/d/2020_Fall_courses/SUSTech_cpp/assignments/Assignment4_matrix_operation/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/Assignment4_matrix_operation.dir/main.cpp.o"
+	/usr/bin/c++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Assignment4_matrix_operation.dir/main.cpp.o -c /cygdrive/d/2020_Fall_courses/SUSTech_cpp/assignments/Assignment4_matrix_operation/main.cpp
 
 CMakeFiles/Assignment4_matrix_operation.dir/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Assignment4_matrix_operation.dir/main.cpp.i"
-	/usr/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /cygdrive/d/SUSTech_cpp/assignments/Assignment4_matrix_operation/main.cpp > CMakeFiles/Assignment4_matrix_operation.dir/main.cpp.i
+	/usr/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /cygdrive/d/2020_Fall_courses/SUSTech_cpp/assignments/Assignment4_matrix_operation/main.cpp > CMakeFiles/Assignment4_matrix_operation.dir/main.cpp.i
 
 CMakeFiles/Assignment4_matrix_operation.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Assignment4_matrix_operation.dir/main.cpp.s"
-	/usr/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /cygdrive/d/SUSTech_cpp/assignments/Assignment4_matrix_operation/main.cpp -o CMakeFiles/Assignment4_matrix_operation.dir/main.cpp.s
+	/usr/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /cygdrive/d/2020_Fall_courses/SUSTech_cpp/assignments/Assignment4_matrix_operation/main.cpp -o CMakeFiles/Assignment4_matrix_operation.dir/main.cpp.s
 
 CMakeFiles/Assignment4_matrix_operation.dir/matrix.cpp.o: CMakeFiles/Assignment4_matrix_operation.dir/flags.make
 CMakeFiles/Assignment4_matrix_operation.dir/matrix.cpp.o: ../matrix.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cygdrive/d/SUSTech_cpp/assignments/Assignment4_matrix_operation/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/Assignment4_matrix_operation.dir/matrix.cpp.o"
-	/usr/bin/c++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Assignment4_matrix_operation.dir/matrix.cpp.o -c /cygdrive/d/SUSTech_cpp/assignments/Assignment4_matrix_operation/matrix.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cygdrive/d/2020_Fall_courses/SUSTech_cpp/assignments/Assignment4_matrix_operation/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/Assignment4_matrix_operation.dir/matrix.cpp.o"
+	/usr/bin/c++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Assignment4_matrix_operation.dir/matrix.cpp.o -c /cygdrive/d/2020_Fall_courses/SUSTech_cpp/assignments/Assignment4_matrix_operation/matrix.cpp
 
 CMakeFiles/Assignment4_matrix_operation.dir/matrix.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Assignment4_matrix_operation.dir/matrix.cpp.i"
-	/usr/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /cygdrive/d/SUSTech_cpp/assignments/Assignment4_matrix_operation/matrix.cpp > CMakeFiles/Assignment4_matrix_operation.dir/matrix.cpp.i
+	/usr/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /cygdrive/d/2020_Fall_courses/SUSTech_cpp/assignments/Assignment4_matrix_operation/matrix.cpp > CMakeFiles/Assignment4_matrix_operation.dir/matrix.cpp.i
 
 CMakeFiles/Assignment4_matrix_operation.dir/matrix.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Assignment4_matrix_operation.dir/matrix.cpp.s"
-	/usr/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /cygdrive/d/SUSTech_cpp/assignments/Assignment4_matrix_operation/matrix.cpp -o CMakeFiles/Assignment4_matrix_operation.dir/matrix.cpp.s
+	/usr/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /cygdrive/d/2020_Fall_courses/SUSTech_cpp/assignments/Assignment4_matrix_operation/matrix.cpp -o CMakeFiles/Assignment4_matrix_operation.dir/matrix.cpp.s
 
-CMakeFiles/Assignment4_matrix_operation.dir/mxm.cpp.o: CMakeFiles/Assignment4_matrix_operation.dir/flags.make
-CMakeFiles/Assignment4_matrix_operation.dir/mxm.cpp.o: ../mxm.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cygdrive/d/SUSTech_cpp/assignments/Assignment4_matrix_operation/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/Assignment4_matrix_operation.dir/mxm.cpp.o"
-	/usr/bin/c++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Assignment4_matrix_operation.dir/mxm.cpp.o -c /cygdrive/d/SUSTech_cpp/assignments/Assignment4_matrix_operation/mxm.cpp
+CMakeFiles/Assignment4_matrix_operation.dir/moperation.cpp.o: CMakeFiles/Assignment4_matrix_operation.dir/flags.make
+CMakeFiles/Assignment4_matrix_operation.dir/moperation.cpp.o: ../moperation.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cygdrive/d/2020_Fall_courses/SUSTech_cpp/assignments/Assignment4_matrix_operation/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/Assignment4_matrix_operation.dir/moperation.cpp.o"
+	/usr/bin/c++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Assignment4_matrix_operation.dir/moperation.cpp.o -c /cygdrive/d/2020_Fall_courses/SUSTech_cpp/assignments/Assignment4_matrix_operation/moperation.cpp
 
-CMakeFiles/Assignment4_matrix_operation.dir/mxm.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Assignment4_matrix_operation.dir/mxm.cpp.i"
-	/usr/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /cygdrive/d/SUSTech_cpp/assignments/Assignment4_matrix_operation/mxm.cpp > CMakeFiles/Assignment4_matrix_operation.dir/mxm.cpp.i
+CMakeFiles/Assignment4_matrix_operation.dir/moperation.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Assignment4_matrix_operation.dir/moperation.cpp.i"
+	/usr/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /cygdrive/d/2020_Fall_courses/SUSTech_cpp/assignments/Assignment4_matrix_operation/moperation.cpp > CMakeFiles/Assignment4_matrix_operation.dir/moperation.cpp.i
 
-CMakeFiles/Assignment4_matrix_operation.dir/mxm.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Assignment4_matrix_operation.dir/mxm.cpp.s"
-	/usr/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /cygdrive/d/SUSTech_cpp/assignments/Assignment4_matrix_operation/mxm.cpp -o CMakeFiles/Assignment4_matrix_operation.dir/mxm.cpp.s
+CMakeFiles/Assignment4_matrix_operation.dir/moperation.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Assignment4_matrix_operation.dir/moperation.cpp.s"
+	/usr/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /cygdrive/d/2020_Fall_courses/SUSTech_cpp/assignments/Assignment4_matrix_operation/moperation.cpp -o CMakeFiles/Assignment4_matrix_operation.dir/moperation.cpp.s
 
 # Object files for target Assignment4_matrix_operation
 Assignment4_matrix_operation_OBJECTS = \
 "CMakeFiles/Assignment4_matrix_operation.dir/main.cpp.o" \
 "CMakeFiles/Assignment4_matrix_operation.dir/matrix.cpp.o" \
-"CMakeFiles/Assignment4_matrix_operation.dir/mxm.cpp.o"
+"CMakeFiles/Assignment4_matrix_operation.dir/moperation.cpp.o"
 
 # External object files for target Assignment4_matrix_operation
 Assignment4_matrix_operation_EXTERNAL_OBJECTS =
 
 Assignment4_matrix_operation.exe: CMakeFiles/Assignment4_matrix_operation.dir/main.cpp.o
 Assignment4_matrix_operation.exe: CMakeFiles/Assignment4_matrix_operation.dir/matrix.cpp.o
-Assignment4_matrix_operation.exe: CMakeFiles/Assignment4_matrix_operation.dir/mxm.cpp.o
+Assignment4_matrix_operation.exe: CMakeFiles/Assignment4_matrix_operation.dir/moperation.cpp.o
 Assignment4_matrix_operation.exe: CMakeFiles/Assignment4_matrix_operation.dir/build.make
 Assignment4_matrix_operation.exe: CMakeFiles/Assignment4_matrix_operation.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/cygdrive/d/SUSTech_cpp/assignments/Assignment4_matrix_operation/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX executable Assignment4_matrix_operation.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/cygdrive/d/2020_Fall_courses/SUSTech_cpp/assignments/Assignment4_matrix_operation/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX executable Assignment4_matrix_operation.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/Assignment4_matrix_operation.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -143,6 +143,6 @@ CMakeFiles/Assignment4_matrix_operation.dir/clean:
 .PHONY : CMakeFiles/Assignment4_matrix_operation.dir/clean
 
 CMakeFiles/Assignment4_matrix_operation.dir/depend:
-	cd /cygdrive/d/SUSTech_cpp/assignments/Assignment4_matrix_operation/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /cygdrive/d/SUSTech_cpp/assignments/Assignment4_matrix_operation /cygdrive/d/SUSTech_cpp/assignments/Assignment4_matrix_operation /cygdrive/d/SUSTech_cpp/assignments/Assignment4_matrix_operation/cmake-build-debug /cygdrive/d/SUSTech_cpp/assignments/Assignment4_matrix_operation/cmake-build-debug /cygdrive/d/SUSTech_cpp/assignments/Assignment4_matrix_operation/cmake-build-debug/CMakeFiles/Assignment4_matrix_operation.dir/DependInfo.cmake --color=$(COLOR)
+	cd /cygdrive/d/2020_Fall_courses/SUSTech_cpp/assignments/Assignment4_matrix_operation/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /cygdrive/d/2020_Fall_courses/SUSTech_cpp/assignments/Assignment4_matrix_operation /cygdrive/d/2020_Fall_courses/SUSTech_cpp/assignments/Assignment4_matrix_operation /cygdrive/d/2020_Fall_courses/SUSTech_cpp/assignments/Assignment4_matrix_operation/cmake-build-debug /cygdrive/d/2020_Fall_courses/SUSTech_cpp/assignments/Assignment4_matrix_operation/cmake-build-debug /cygdrive/d/2020_Fall_courses/SUSTech_cpp/assignments/Assignment4_matrix_operation/cmake-build-debug/CMakeFiles/Assignment4_matrix_operation.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/Assignment4_matrix_operation.dir/depend
 

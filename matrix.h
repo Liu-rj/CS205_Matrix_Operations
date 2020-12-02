@@ -46,6 +46,10 @@ public:
 
     Matrix operator*(Matrix &matrix);
 
+    Matrix operator+(Matrix &matrix);
+
+    Matrix operator-(Matrix &matrix);
+
     Matrix operator*(float t) const;
 
     friend Matrix operator*(float t, Matrix &matrix);
@@ -55,5 +59,11 @@ public:
     ~Matrix();
 
 };
+
+void mxm(float **c, float **a, float **b, int row1, int column1, int row2, int column2);
+
+void mxa(float **c, float **a, float **b, int row, int column2);
+
+void mxs(float **c, float **a, float **b, int row, int column2);
 
 #endif //ASSIGNMENT4_MATRIX_OPERATION_MATRIX_H

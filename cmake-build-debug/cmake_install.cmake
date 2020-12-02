@@ -1,4 +1,4 @@
-# Install script for directory: /cygdrive/d/SUSTech_cpp/assignments/Assignment4_matrix_operation
+# Install script for directory: /cygdrive/d/2020_Fall_courses/SUSTech_cpp/assignments/Assignment4_matrix_operation
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -40,5 +40,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/cygdrive/d/SUSTech_cpp/assignments/Assignment4_matrix_operation/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/cygdrive/d/2020_Fall_courses/SUSTech_cpp/assignments/Assignment4_matrix_operation/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

@@ -3,18 +3,17 @@
 //
 
 #include "matrix.h"
-#include "mxm.h"
 
 Matrix::Matrix(int row, int column)
 {
     this->row = row;
     this->column = column;
-    size = row * column;
-    data = new Data;
-    data->elements = new float*[row];
+    this->size = row * column;
+    this->data = new Data;
+    data->elements = new float *[row];
     for (int i = 0; i < row; ++i)
     {
-        data->elements[i] = new float[column];
+        data->elements[i] = new float[column]{};
     }
     data->count = 1;
 }
@@ -23,10 +22,26 @@ Matrix::Matrix(int row, int column, float **p)
 {
     this->row = row;
     this->column = column;
-    size = row * column;
-    data = new Data;
-    data->elements = p;
-    data->count = 2;
+    this->size = row * column;
+    this->data = new Data;
+    if (row > 4 && column > 4)
+    {
+        data->elements = p;
+        data->count = 2;
+    }
+    else
+    {
+        data->elements = new float *[row];
+        for (int i = 0; i < row; ++i)
+        {
+            data->elements[i] = new float[column];
+            for (int j = 0; j < column; ++j)
+            {
+                data->elements[i][j] = p[i][j];
+            }
+        }
+        data->count = 1;
+    }
 }
 
 Matrix::Matrix(Matrix const &matrix)
@@ -44,7 +59,7 @@ Matrix::Matrix(int row, int column, const float *p)
     this->column = column;
     size = row * column;
     data = new Data;
-    data->elements = new float*[row];
+    data->elements = new float *[row];
     int pos = 0;
     for (int i = 0; i < row; ++i)
     {
@@ -106,7 +121,7 @@ Matrix &Matrix::operator=(const Matrix &matrix)
     if (&matrix == this)
         return *this;
 
-    if (data != nullptr && data->count == 0)
+    if (data != nullptr && data->count == 1)
     {
         for (int i = 0; i < row; ++i)
         {
@@ -114,6 +129,7 @@ Matrix &Matrix::operator=(const Matrix &matrix)
         }
         delete[] data->elements;
         delete data;
+        cout << "data is being destroyed" << endl;
     }
     else
         data->count--;
@@ -185,3 +201,31 @@ Matrix operator*(float t, Matrix &matrix)
     }
     return result;
 }
+
+Matrix Matrix::operator+(Matrix &matrix)
+{
+    Matrix result;
+    if (row != matrix.row || column != matrix.column)
+    {
+        cout << "matrix size mismatch!" << endl;
+        return result;
+    }
+    result = Matrix(row, column);
+    mxa(result.data->elements, data->elements, matrix.data->elements, row, column);
+    return result;
+}
+
+Matrix Matrix::operator-(Matrix &matrix)
+{
+    Matrix result;
+    if (row != matrix.row || column != matrix.column)
+    {
+        cout << "matrix size mismatch!" << endl;
+        return result;
+    }
+    result = Matrix(row, column);
+    mxs(result.data->elements, data->elements, matrix.data->elements, row, column);
+    return result;
+}
+
+

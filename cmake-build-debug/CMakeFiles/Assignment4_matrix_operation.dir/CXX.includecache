@@ -6,23 +6,11 @@
 
 #IncludeRegexTransform: 
 
-/cygdrive/d/SUSTech_cpp/assignments/Assignment4_matrix_operation/main.cpp
+/cygdrive/d/2020_Fall_courses/SUSTech_cpp/assignments/Assignment4_matrix_operation/matrix.h
 iostream
 -
+
+/cygdrive/d/2020_Fall_courses/SUSTech_cpp/assignments/Assignment4_matrix_operation/moperation.cpp
 matrix.h
-/cygdrive/d/SUSTech_cpp/assignments/Assignment4_matrix_operation/matrix.h
-
-/cygdrive/d/SUSTech_cpp/assignments/Assignment4_matrix_operation/matrix.cpp
-matrix.h
-/cygdrive/d/SUSTech_cpp/assignments/Assignment4_matrix_operation/matrix.h
-mxm.h
-/cygdrive/d/SUSTech_cpp/assignments/Assignment4_matrix_operation/mxm.h
-
-/cygdrive/d/SUSTech_cpp/assignments/Assignment4_matrix_operation/matrix.h
-iostream
--
-
-/cygdrive/d/SUSTech_cpp/assignments/Assignment4_matrix_operation/mxm.h
-iostream
--
+/cygdrive/d/2020_Fall_courses/SUSTech_cpp/assignments/Assignment4_matrix_operation/matrix.h
 

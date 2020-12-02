@@ -18,13 +18,14 @@ int main()
     float c = 2, d = 3;
     Matrix A(3, 5, a);
     Matrix B(5, 3, b);
-    Matrix D, E;
+    Matrix D(A), E(B);
     Matrix C = A * B;
-    Matrix F(A);
+    Matrix F = A + B;
     D = A * c;
     E = d * B;
     cout << A << B << C << D << E << F;
     cout << A * B;
+
     for (int i = 0; i < 5; ++i)
     {
         delete[] b[i];

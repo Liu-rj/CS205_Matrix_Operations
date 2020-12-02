@@ -68,10 +68,10 @@ RM = /cygdrive/c/Users/21548/AppData/Local/JetBrains/CLion2020.2/cygwin_cmake/bi
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /cygdrive/d/SUSTech_cpp/assignments/Assignment4_matrix_operation
+CMAKE_SOURCE_DIR = /cygdrive/d/2020_Fall_courses/SUSTech_cpp/assignments/Assignment4_matrix_operation
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /cygdrive/d/SUSTech_cpp/assignments/Assignment4_matrix_operation/cmake-build-debug
+CMAKE_BINARY_DIR = /cygdrive/d/2020_Fall_courses/SUSTech_cpp/assignments/Assignment4_matrix_operation/cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -100,9 +100,9 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /cygdrive/d/SUSTech_cpp/assignments/Assignment4_matrix_operation/cmake-build-debug/CMakeFiles /cygdrive/d/SUSTech_cpp/assignments/Assignment4_matrix_operation/cmake-build-debug/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /cygdrive/d/2020_Fall_courses/SUSTech_cpp/assignments/Assignment4_matrix_operation/cmake-build-debug/CMakeFiles /cygdrive/d/2020_Fall_courses/SUSTech_cpp/assignments/Assignment4_matrix_operation/cmake-build-debug/CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /cygdrive/d/SUSTech_cpp/assignments/Assignment4_matrix_operation/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /cygdrive/d/2020_Fall_courses/SUSTech_cpp/assignments/Assignment4_matrix_operation/cmake-build-debug/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -197,32 +197,32 @@ matrix.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Assignment4_matrix_operation.dir/build.make CMakeFiles/Assignment4_matrix_operation.dir/matrix.cpp.s
 .PHONY : matrix.cpp.s
 
-mxm.o: mxm.cpp.o
+moperation.o: moperation.cpp.o
 
-.PHONY : mxm.o
+.PHONY : moperation.o
 
 # target to build an object file
-mxm.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Assignment4_matrix_operation.dir/build.make CMakeFiles/Assignment4_matrix_operation.dir/mxm.cpp.o
-.PHONY : mxm.cpp.o
+moperation.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Assignment4_matrix_operation.dir/build.make CMakeFiles/Assignment4_matrix_operation.dir/moperation.cpp.o
+.PHONY : moperation.cpp.o
 
-mxm.i: mxm.cpp.i
+moperation.i: moperation.cpp.i
 
-.PHONY : mxm.i
+.PHONY : moperation.i
 
 # target to preprocess a source file
-mxm.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Assignment4_matrix_operation.dir/build.make CMakeFiles/Assignment4_matrix_operation.dir/mxm.cpp.i
-.PHONY : mxm.cpp.i
+moperation.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Assignment4_matrix_operation.dir/build.make CMakeFiles/Assignment4_matrix_operation.dir/moperation.cpp.i
+.PHONY : moperation.cpp.i
 
-mxm.s: mxm.cpp.s
+moperation.s: moperation.cpp.s
 
-.PHONY : mxm.s
+.PHONY : moperation.s
 
 # target to generate assembly for a file
-mxm.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Assignment4_matrix_operation.dir/build.make CMakeFiles/Assignment4_matrix_operation.dir/mxm.cpp.s
-.PHONY : mxm.cpp.s
+moperation.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Assignment4_matrix_operation.dir/build.make CMakeFiles/Assignment4_matrix_operation.dir/moperation.cpp.s
+.PHONY : moperation.cpp.s
 
 # Help Target
 help:
@@ -239,9 +239,9 @@ help:
 	@echo "... matrix.o"
 	@echo "... matrix.i"
 	@echo "... matrix.s"
-	@echo "... mxm.o"
-	@echo "... mxm.i"
-	@echo "... mxm.s"
+	@echo "... moperation.o"
+	@echo "... moperation.i"
+	@echo "... moperation.s"
 .PHONY : help
 
 

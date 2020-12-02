@@ -3,7 +3,7 @@ file(REMOVE_RECURSE
   "Assignment4_matrix_operation.pdb"
   "CMakeFiles/Assignment4_matrix_operation.dir/main.cpp.o"
   "CMakeFiles/Assignment4_matrix_operation.dir/matrix.cpp.o"
-  "CMakeFiles/Assignment4_matrix_operation.dir/mxm.cpp.o"
+  "CMakeFiles/Assignment4_matrix_operation.dir/moperation.cpp.o"
   "libAssignment4_matrix_operation.dll.a"
 )
 
